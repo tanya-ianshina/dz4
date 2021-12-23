@@ -1,0 +1,153 @@
+class Sequence:
+  def __init__(self, seq):
+    self.seq = seq
+    self.lenght = len(seq)
+  def seq():
+    print(self.seq)
+
+  def lenght():
+    print(self.lenght)
+
+
+class DNA(Sequence):
+  name = 'DNA'
+  alphabet = ['A', 'T', 'G', 'C']
+  def __init__(self, seq):
+        super().__init__(Sequence,seq)
+
+  def mol_weight(self):
+    weight = 0
+    for i in self:
+      if self.seq[i] == 'A': 
+        z = 135
+      elif self.seq[i] == 'T':
+        z = 126
+      elif self.seq[i] == 'G':
+        z = 151
+      elif self.seq[i] == 'C':
+        z = 111
+      weight +=z
+      i+=1
+      print(weight)
+
+  def Complement(self):
+      c=[]
+      for i in seq: 
+        if self.seq[i] == 'A':
+            c.append('T')
+        elif self.seq[i] == 'T':
+            c.append('A')
+        elif self.seq[i] == 'G':
+            c.append('C')
+        elif self.seq[i] == 'C':
+            c.append('G')
+        print(c)
+
+  def Transcription(self):
+        t = []
+        for i in seq:
+          if self.seq[i] == 'A':
+            t.append('U')
+          elif self.seq[i] == 'T':
+            t.append('A')
+          elif self.seq[i] == 'G':
+            t.append('C')
+          elif self.seq[i] == 'C':
+            t.append('G')
+          print(t)
+          
+         
+         
+ class RNA(Sequence):
+  alphabet = ['A', 'U', 'G', 'C']
+  def __init__(self,seq,):
+        super().__init__(Sequence,seq)
+
+  def mol_weight(self):
+    weight = 0
+    for i in self:
+      if self.seq[i] == 'A': 
+        z = 135
+      elif self.seq[i] == 'U':
+        z = 112
+      elif self.seq[i] == 'G':
+        z = 151
+      elif self.seq[i] == 'C':
+        z = 111
+      weight +=z
+      i+=1
+      print(weight)
+
+  def Complement(self):
+    c=[]
+    for i in self:
+      if self.seq[i] == 'A':
+          c.append('U')
+      elif self.seq[i] == 'U':
+          c.append('A')
+      elif self.seq[i] == 'G':
+          c.append('C')
+      elif self.seq[i] == 'C':
+          c.append('G')
+      print(c)
+
+    def Translation(self):
+      dic = {'UUU': 'F', 'UUC': 'F','UUA':'L','UUG':'L','CUU':'L', 'CUC': 'L','CUA':'L',  'CUG':'L', 'AUU':'I','AUC':'I',
+    'AUA': 'I','AUG':'M','GUU':'V','GUC':'V','GUA':'V','GUG':'V', 'CCU': 'P','CCC': 'P', 'CCA': 'P','CCG': 'P',
+    'ACU': 'T','ACC': 'T','ACA': 'T','ACG': 'T', 'GCU': 'A','GCC': 'A','GCA': 'A','GCG': 'A', 'UAU': 'Y','UAC': 'Y',
+    'CAU': 'H','CAC': 'H','CAA': 'Q','CAG': 'Q', 'UCU': 'S','UCA': 'S','UCC': 'S','UCG': 'S', 'AAU': 'N', 'AAC': 'N',
+    'AAA': 'K','AAG': 'K','GAU': 'D','GAC': 'D','GAA': 'E','GAG': 'E', 'UGU': 'C','UGC': 'C','UGG': 'W','CGU': 'R',
+    'CGC': 'R','CGA': 'R', 'CGG': 'R','AGU': 'S','AGC': 'S','AGA': 'R','AGG': 'R','GGU': 'G', 'GGC': 'G','GGA': 'G',
+    'GGG': 'G','UAA': 'STOP','UAG': 'STOP', 'UGA': 'STOP'}
+    
+    
+ class Protein(Sequence):
+  alphabet = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']
+  def __init__(self,seq,):
+    super().__init__(Sequence,seq)
+  def mol_weight(self):
+    weight = 0
+    for i in self:
+      if self.seq[i] == 'A': 
+        z = 89
+      elif self.seq[i] == 'R':
+        z = 174
+      elif self.seq[i] == 'N':
+        z = 132
+      elif self.seq[i] == 'D':
+        z = 133
+      elif self.seq[i] == 'C':
+        z = 121
+      elif self.seq[i] == 'Q':
+        z = 146
+      elif self.seq[i] == 'E':
+        z = 147
+      elif self.seq[i] == 'G':
+        z = 75
+      elif self.seq[i] == 'H':
+        z = 155
+      elif self.seq[i] == 'I':
+        z = 131
+      elif self.seq[i] == 'L':
+        z = 131
+      elif self.seq[i] == 'K':
+        z = 146
+      elif self.seq[i] == 'M':
+        z = 149
+      elif self.seq[i] == 'F':
+        z = 165
+      elif self.seq[i] == 'P':
+        z = 115
+      elif self.seq[i] == 'S':
+        z = 105
+      elif self.seq[i] == 'T':
+        z = 119
+      elif self.seq[i] == 'W':
+        z = 204
+      elif self.seq[i] == 'Y':
+        z = 181
+      elif self.seq[i] == 'V':
+        z = 117
+      weight +=z
+      i+=1
+      print(weight)
